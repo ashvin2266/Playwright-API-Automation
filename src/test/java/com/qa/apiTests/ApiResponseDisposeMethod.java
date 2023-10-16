@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class apiResponseDisposeMethod {
+public class ApiResponseDisposeMethod {
 
     Playwright playwright;
     APIRequest request;
