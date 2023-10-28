@@ -72,16 +72,16 @@ public class CreateUserPostCallWithPojoTest {
         Assert.assertEquals(actualUser.getStatus(),users.getStatus());
         Assert.assertNotNull(actualUser.getId());
 
-////      Get call-get the same user by Id
-//        APIResponse getApiResponse = apiRequestContext.get("https://gorest.co.in/public/v2/users/"+userId,
-//                RequestOptions.create()
-//                        .setHeader("Authorization","Bearer d0418e269f6257319312a72819c83cc742bf932e2dd5df88aa4db7629e685495"));
-//
-//        Assert.assertEquals(getApiResponse.status(),200);
-//        Assert.assertEquals(getApiResponse.statusText(),"OK");
-//        System.out.println(getApiResponse.text());
-//        Assert.assertTrue(getApiResponse.text().contains(userId));
-//        Assert.assertTrue(getApiResponse.text().contains("Banerjee"));
+//      Get call-get the same user by Id
+        APIResponse getApiResponse = apiRequestContext.get("https://gorest.co.in/public/v2/users/"+userId,
+                RequestOptions.create()
+                        .setHeader("Authorization","Bearer d0418e269f6257319312a72819c83cc742bf932e2dd5df88aa4db7629e685495"));
+
+        Assert.assertEquals(getApiResponse.status(),200);
+        Assert.assertEquals(getApiResponse.statusText(),"OK");
+        System.out.println("-----------------Response text from Get method is -------:"+getApiResponse.text());
+        Assert.assertTrue(getApiResponse.text().contains(userId));
+        Assert.assertTrue(getApiResponse.text().contains(actualUser.getName()));
 
 
     }
