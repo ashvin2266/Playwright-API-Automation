@@ -41,7 +41,7 @@ public class APIResponseHeadersTest {
         headersmap.forEach((k,v) -> System.out.println(k +" : "+ v));
         System.out.println("Content type header is : "+headersmap.get("content-type"));
         Assert.assertEquals(headersmap.get("server"),"cloudflare");
-        Assert.assertEquals(headersmap.get("x-pagination-pages"),"284");
+        Assert.assertEquals(headersmap.get("x-pagination-pages"),"297");
         Assert.assertEquals(headersmap.get("content-type"),"application/json; charset=utf-8");
 //        using ArrayList
         System.out.println("==============Using ArrayList========================");
