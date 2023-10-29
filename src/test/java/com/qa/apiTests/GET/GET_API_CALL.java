@@ -1,4 +1,4 @@
-package com.qa.apiTests;
+package com.qa.apiTests.GET;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

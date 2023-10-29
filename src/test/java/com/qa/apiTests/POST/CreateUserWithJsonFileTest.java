@@ -1,4 +1,4 @@
-package com.qa.apiTests;
+package com.qa.apiTests.POST;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -33,7 +33,7 @@ public class CreateUserWithJsonFileTest {
         playwright.close();
     }
     @Test
-            public void createuserWithJsonFileTest() throws IOException {
+            public void createUserWithJsonFileTest() throws IOException {
 
 
     //        Creating json body with json file create one folder for json data file and use it here
